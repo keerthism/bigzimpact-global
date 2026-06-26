@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+sanity/node_modules/
+
+# Build output
+dist/
+.vercel/
+sanity/dist/
+
+# Environment
+.env
+.env.local
+
+# Astro
+.astro/
+
+# OS
+.DS_Store
+Thumbs.db
