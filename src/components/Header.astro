@@ -27,92 +27,6 @@
     </button>
   </nav>
 
-  <!-- Mobile drawer -->
-  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
-    <div class="mob-item">
-      <button class="mob-trigger" data-mob="mob-products">Products <span class="mob-icon">+</span></button>
-      <div class="mob-panel" id="mob-products">
-        <div class="mob-section"><div class="mob-section-title">01 · Reconciliation</div>
-          <a href="https://ezecollect.in/" target="_blank" rel="noopener noreferrer" class="mob-link">Ezecollect →</a>
-          <a href="#" class="mob-link">Settlements →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">02 · Platform</div>
-          <a href="#" class="mob-link">APIs →</a>
-          <a href="#" class="mob-link">Dashboard →</a>
-          <a href="#" class="mob-link">Security →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">03 · Roadmap</div>
-          <div class="mob-static">AI innovations for B2B solutions</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mob-item">
-      <button class="mob-trigger" data-mob="mob-technology">Technology <span class="mob-icon">+</span></button>
-      <div class="mob-panel" id="mob-technology">
-        <div class="mob-section"><div class="mob-section-title">01 · Infrastructure</div>
-          <a href="#" class="mob-link">Cloud Transformation →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">02 · Intelligence</div>
-          <a href="#" class="mob-link">AI Engine →</a>
-          <a href="#" class="mob-link">Automation →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">03 · Developer</div>
-          <a href="#" class="mob-link">SDKs →</a>
-          <a href="#" class="mob-link">API Reference →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">04 · Trust</div>
-          <a href="#" class="mob-link">Status →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mob-item">
-      <button class="mob-trigger" data-mob="mob-services">Services <span class="mob-icon">+</span></button>
-      <div class="mob-panel" id="mob-services">
-        <div class="mob-section"><div class="mob-section-title">01 · Consulting</div>
-          <a href="#" class="mob-link">Cloud Lead Generation (B2B) →</a>
-          <a href="#" class="mob-link">Demand Generation (B2C) →</a>
-          <a href="#" class="mob-link">Email Campaigns & Registration →</a>
-          <a href="#" class="mob-link">SaaS Lead Generation →</a>
-          <a href="#" class="mob-link">AI-Powered Lead Discovery →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">02 · Support</div>
-          <a href="#" class="mob-link">Priority SLA →</a>
-          <a href="#" class="mob-link">Knowledge Base →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">03 · Enablement</div>
-          <a href="#" class="mob-link">SSL Certificates →</a>
-          <a href="#" class="mob-link">DSC (Digital Signature) →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">04 · Enterprise</div>
-          <a href="#" class="mob-link">Custom Builds →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mob-item">
-      <button class="mob-trigger" data-mob="mob-resources">Resources <span class="mob-icon">+</span></button>
-      <div class="mob-panel" id="mob-resources">
-        <div class="mob-section"><div class="mob-section-title">01 · Learn</div>
-          <a href="#" class="mob-link">Guides →</a>
-          <a href="#" class="mob-link">Case Studies →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">02 · Company</div>
-          <a href="#" class="mob-link">About →</a>
-        </div>
-        <div class="mob-section"><div class="mob-section-title">03 · Connect</div>
-          <a href="#" class="mob-link">Contact →</a>
-          <a href="#" class="mob-link" id="mob-open-partner">Partnerships →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="mob-cta">
-      <button class="btn-nav" id="open-partner-modal-mob"><span>PARTNER WITH US</span></button>
-    </div>
-  </div>
-
   <!-- MEGA: PRODUCTS (3 columns) -->
   <div class="mega" data-panel="products">
     <div class="mega-inner mega-inner--3col">
@@ -210,6 +124,92 @@
     </div>
   </div>
 </header>
+
+<!-- Mobile drawer — must be outside <header> to escape its stacking context -->
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <div class="mob-item">
+    <button class="mob-trigger" data-mob="mob-products">Products <span class="mob-icon">+</span></button>
+    <div class="mob-panel" id="mob-products">
+      <div class="mob-section"><div class="mob-section-title">01 · Reconciliation</div>
+        <a href="https://ezecollect.in/" target="_blank" rel="noopener noreferrer" class="mob-link">Ezecollect →</a>
+        <a href="#" class="mob-link">Settlements →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">02 · Platform</div>
+        <a href="#" class="mob-link">APIs →</a>
+        <a href="#" class="mob-link">Dashboard →</a>
+        <a href="#" class="mob-link">Security →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">03 · Roadmap</div>
+        <div class="mob-static">AI innovations for B2B solutions</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mob-item">
+    <button class="mob-trigger" data-mob="mob-technology">Technology <span class="mob-icon">+</span></button>
+    <div class="mob-panel" id="mob-technology">
+      <div class="mob-section"><div class="mob-section-title">01 · Infrastructure</div>
+        <a href="#" class="mob-link">Cloud Transformation →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">02 · Intelligence</div>
+        <a href="#" class="mob-link">AI Engine →</a>
+        <a href="#" class="mob-link">Automation →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">03 · Developer</div>
+        <a href="#" class="mob-link">SDKs →</a>
+        <a href="#" class="mob-link">API Reference →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">04 · Trust</div>
+        <a href="#" class="mob-link">Status →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mob-item">
+    <button class="mob-trigger" data-mob="mob-services">Services <span class="mob-icon">+</span></button>
+    <div class="mob-panel" id="mob-services">
+      <div class="mob-section"><div class="mob-section-title">01 · Consulting</div>
+        <a href="#" class="mob-link">Cloud Lead Generation (B2B) →</a>
+        <a href="#" class="mob-link">Demand Generation (B2C) →</a>
+        <a href="#" class="mob-link">Email Campaigns &amp; Registration →</a>
+        <a href="#" class="mob-link">SaaS Lead Generation →</a>
+        <a href="#" class="mob-link">AI-Powered Lead Discovery →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">02 · Support</div>
+        <a href="#" class="mob-link">Priority SLA →</a>
+        <a href="#" class="mob-link">Knowledge Base →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">03 · Enablement</div>
+        <a href="#" class="mob-link">SSL Certificates →</a>
+        <a href="#" class="mob-link">DSC (Digital Signature) →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">04 · Enterprise</div>
+        <a href="#" class="mob-link">Custom Builds →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mob-item">
+    <button class="mob-trigger" data-mob="mob-resources">Resources <span class="mob-icon">+</span></button>
+    <div class="mob-panel" id="mob-resources">
+      <div class="mob-section"><div class="mob-section-title">01 · Learn</div>
+        <a href="#" class="mob-link">Guides →</a>
+        <a href="#" class="mob-link">Case Studies →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">02 · Company</div>
+        <a href="#" class="mob-link">About →</a>
+      </div>
+      <div class="mob-section"><div class="mob-section-title">03 · Connect</div>
+        <a href="#" class="mob-link">Contact →</a>
+        <a href="#" class="mob-link" id="mob-open-partner">Partnerships →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mob-cta">
+    <button class="btn-nav" id="open-partner-modal-mob"><span>PARTNER WITH US</span></button>
+  </div>
+</div>
 
 <div id="partner-modal" class="pm-overlay" aria-hidden="true">
   <div class="pm-card">
@@ -397,77 +397,6 @@
     .pm-title { font-size: 24px; }
   }
 
-  /* ── HAMBURGER ─────────────────────────────────────────────── */
-  .hamburger {
-    display: none;
-    flex-direction: column; justify-content: center; align-items: center; gap: 5px;
-    width: 40px; height: 40px; background: none; border: 1px solid var(--line);
-    cursor: pointer; flex-shrink: 0; padding: 0;
-  }
-  .hamburger span {
-    display: block; width: 18px; height: 1.5px;
-    background: var(--ink); transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-  .hamburger.open span:nth-child(2) { opacity: 0; }
-  .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
-
-  /* ── MOBILE DRAWER ─────────────────────────────────────────── */
-  .mobile-drawer {
-    display: none;
-    position: fixed; top: calc(33px + 76px); left: 0; right: 0; bottom: 0;
-    background: var(--white); overflow-y: auto; z-index: 998;
-    border-top: 1px solid var(--line);
-    transform: translateY(-10px); opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    pointer-events: none;
-  }
-  .mobile-drawer.open {
-    transform: translateY(0); opacity: 1; pointer-events: all;
-  }
-  .mob-item { border-bottom: 1px solid var(--line); }
-  .mob-trigger {
-    width: 100%; display: flex; justify-content: space-between; align-items: center;
-    padding: 18px var(--edge); background: none; border: none; cursor: pointer;
-    font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 500;
-    color: var(--ink); text-align: left;
-  }
-  .mob-icon {
-    font-size: 20px; font-weight: 300; line-height: 1;
-    transition: transform 0.3s ease; display: inline-block;
-  }
-  .mob-trigger.active .mob-icon { transform: rotate(45deg); }
-  .mob-panel {
-    display: none; padding: 0 var(--edge) 20px; flex-direction: column; gap: 20px;
-  }
-  .mob-panel.open { display: flex; }
-  .mob-section { display: flex; flex-direction: column; gap: 4px; }
-  .mob-section-title {
-    font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500;
-    text-transform: uppercase; letter-spacing: 0.14em; color: var(--berry);
-    margin-bottom: 8px;
-  }
-  .mob-link {
-    font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500;
-    color: var(--ink); text-decoration: none; padding: 6px 0;
-    border-bottom: 1px solid var(--line); transition: color 0.2s;
-  }
-  .mob-link:hover, .mob-link:active { color: var(--berry); }
-  .mob-static {
-    font-family: 'Space Grotesk', sans-serif; font-size: 14px;
-    color: var(--ink); opacity: 0.6; padding: 6px 0;
-  }
-  .mob-cta {
-    padding: 24px var(--edge);
-  }
-  .mob-cta .btn-nav { width: 100%; justify-content: center; }
-
-  @media (max-width: 900px) {
-    .hamburger { display: flex; }
-    .nav-menu { display: none; }
-    .nav-right { display: none; }
-    .mobile-drawer { display: block; }
-  }
 </style>
 
 <script>

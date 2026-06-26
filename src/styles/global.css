@@ -218,6 +218,71 @@ nav {
 
 @media (max-width: 900px) { .mega { display: none; } }
 
+/* ── MOBILE NAV ───────────────────────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column; justify-content: center; align-items: center; gap: 6px;
+  width: 44px; height: 44px; background: none; border: 1px solid var(--line);
+  cursor: pointer; flex-shrink: 0; padding: 0;
+}
+.hamburger span {
+  display: block; width: 20px; height: 2px;
+  background: var(--ink); border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+.mobile-drawer {
+  position: fixed; top: calc(33px + 76px); left: 0; right: 0; bottom: 0;
+  background: var(--white); overflow-y: auto; z-index: 1001;
+  border-top: 1px solid var(--line);
+  display: none;
+}
+.mobile-drawer.open { display: block; }
+
+.mob-item { border-bottom: 1px solid var(--line); }
+.mob-trigger {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 18px var(--edge); background: none; border: none; cursor: pointer;
+  font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 500;
+  color: var(--ink); text-align: left;
+}
+.mob-icon {
+  font-size: 22px; font-weight: 300; line-height: 1;
+  transition: transform 0.25s ease; display: inline-block;
+}
+.mob-trigger.active .mob-icon { transform: rotate(45deg); }
+.mob-panel {
+  display: none; padding: 0 var(--edge) 20px; flex-direction: column; gap: 20px;
+}
+.mob-panel.open { display: flex; }
+.mob-section { display: flex; flex-direction: column; gap: 4px; }
+.mob-section-title {
+  font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.14em; color: var(--berry);
+  margin-bottom: 8px;
+}
+.mob-link {
+  font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 500;
+  color: var(--ink); text-decoration: none; padding: 8px 0;
+  border-bottom: 1px solid var(--line); display: block;
+}
+.mob-link:active { color: var(--berry); }
+.mob-static {
+  font-family: 'Space Grotesk', sans-serif; font-size: 14px;
+  color: var(--ink); opacity: 0.6; padding: 8px 0;
+}
+.mob-cta { padding: 24px var(--edge); }
+.mob-cta .btn-nav { width: 100%; text-align: center; justify-content: center; }
+
+@media (max-width: 900px) {
+  .hamburger { display: flex; }
+  .nav-menu { display: none !important; }
+  .nav-right { display: none !important; }
+}
+
 /* ── HERO ─────────────────────────────────────────────────── */
 .hero {
   position: relative;
